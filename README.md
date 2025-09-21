@@ -10,5 +10,8 @@ A Spring-based e-commerce application with **JSP pages**, **user roles** (buyer,
 - Reports via **JasperReports**  
 - REST API for product retrieval, order updates, and category management  
 
+## Database
+The project includes a SQL dump in the `resources` folder to create the necessary database tables.
+
 ## Technologies
 Java, Spring MVC & Security, JSP, JPA/Hibernate, MySQL, JasperReports  
