@@ -32,7 +32,7 @@
 
 <!-- Glavni sadržaj -->
 <div class="container mt-5 main-content">
-    <h2 class="text-center mb-4">Svi proizvodi</h2>
+    <!-- <h2 class="text-center mb-4">Svi proizvodi</h2> -->
 
     <div class="row">
         <h2 class="text-center mb-4">Pretraga proizvoda</h2>

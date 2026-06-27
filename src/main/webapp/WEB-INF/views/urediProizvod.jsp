@@ -34,12 +34,12 @@
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Proizvodjac</label>
+            <label class="form-label">Proizvođač</label>
             <input type="text" name="proizvodjac" class="form-control" value="${proizvod.proizvodjac}" required>
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Kolicina</label>
+            <label class="form-label">Količina</label>
             <input type="number" name="kolicina" class="form-control" value="${proizvod.kolicina}" required>
         </div>
 
@@ -57,11 +57,11 @@
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary">Sacuvaj izmene</button>
+        <button type="submit" class="btn btn-primary">Sačuvaj izmene</button>
     </form>
 
     <form action="/proizvodi/obrisi/${proizvod.id}" method="post" class="mt-3">
-        <button type="submit" class="btn btn-danger">Obrisi</button>
+        <button type="submit" class="btn btn-danger">Obriši</button>
     </form>
 </div>
 

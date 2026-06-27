@@ -24,7 +24,7 @@
             <p>${proizvod.opis}</p>
 
             <c:if test="${ulogovan}">
-                <a href="/proizvodi/${proizvod.id}/naruci" class="btn btn-primary">Naruci</a>
+                <a href="/proizvodi/${proizvod.id}/naruci" class="btn btn-primary">Naruči</a>
             </c:if>
         </div>
     </div>

@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -7,7 +8,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="/">Pocetna</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">Početna</a></li>
 
                 <!-- SAMO ZA PRODAVCA -->
                 <sec:authorize access="hasRole('PRODAVAC')">
@@ -21,7 +22,7 @@
 
                 <!-- ULOGOVAN KORISNIK -->
                 <sec:authorize access="isAuthenticated()">
-                    <li class="nav-item"><a class="nav-link" href="/profil/porudzbine">Moje porudzbine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/profil/porudzbine">Moje porudžbine</a></li>
                     <li class="nav-item"><a class="nav-link" href="/profil/uredi">${ulogovaniKorisnik.ime} ${ulogovaniKorisnik.prezime}</a></li>
                 </sec:authorize>
 
@@ -32,7 +33,7 @@
                 </sec:authorize>
 
                 <sec:authorize access="isAuthenticated()">
-                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/logout">Odjavi se</a></li>
                 </sec:authorize>
             </ul>
         </div>

@@ -33,7 +33,7 @@
 
             <form:form action="/register" method="post" modelAttribute="korisnik">
                 <div class="mb-3">
-                    <form:label path="korisnickoIme" cssClass="form-label">Korisnicko ime</form:label>
+                    <form:label path="korisnickoIme" cssClass="form-label">Korisničko ime</form:label>
                     <form:input path="korisnickoIme" cssClass="form-control"/>
                     <form:errors path="korisnickoIme" cssClass="text-danger"/>
                 </div>

@@ -43,7 +43,7 @@
         <p class="fw-bold">Ukupna cena: <fmt:formatNumber value="${ukupnaCena}" type="number" minFractionDigits="2" maxFractionDigits="2"/> RSD</p>
 
         <form method="post" action="/korpa/naruci" style="display: inline-block;">
-            <button type="submit" class="btn btn-primary">Naruci</button>
+            <button type="submit" class="btn btn-primary">Naruči</button>
         </form>
 
         <form method="post" action="/korpa/isprazni" style="display: inline-block; margin-left: 10px;">
@@ -53,7 +53,7 @@
     </c:if>
 
     <c:if test="${empty grupisanaKorpa}">
-        <div class="alert alert-info">Vasa korpa je prazna.</div>
+        <div class="alert alert-info">Vaša korpa je prazna.</div>
     </c:if>
 </div>
 

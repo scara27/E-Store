@@ -207,9 +207,9 @@ public class ProizvodController {
     public String obrisiProizvod(@PathVariable Long id, RedirectAttributes redirect) {
         try {
             proizvodService.findById(id).ifPresent(p -> proizvodService.delete(p));
-            redirect.addFlashAttribute("poruka", "Proizvod uspesno obrisan.");
+            redirect.addFlashAttribute("poruka", "Proizvod uspešno obrisan.");
         } catch (Exception e) {
-            redirect.addFlashAttribute("poruka", "Greska prilikom brisanja proizvoda.");
+            redirect.addFlashAttribute("poruka", "Greška prilikom brisanja proizvoda.");
         }
         return "redirect:/";
     }
